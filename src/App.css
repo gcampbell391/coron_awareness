@@ -37,3 +37,40 @@
   text-shadow: 1px 1px black;
   margin-top: -25px;
 }
+
+/*
+  Mobile Responsiveness 
+*/
+
+@media only screen and (max-width: 750px) {
+  #home-title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 1px black;
+  }
+
+  #home-update-title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-bottom: 30px;
+  }
+
+  #home-total-new-title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: -10px;
+  }
+
+  #home-total-new-title-numbers{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: -5px;
+  }
+}
