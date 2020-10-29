@@ -19,6 +19,21 @@
   font-size: 20px;
   color: white;
   text-shadow: 1px 1px black;
-  margin-top: -10px;
   margin-bottom: 30px;
+}
+
+#home-total-new-title-numbers{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-top: -15px;
+}
+
+#home-total-new-title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-top: -25px;
 }
