@@ -1,7 +1,24 @@
 .App {
   text-align: center;
+  background-color: #66FFFF;
 }
 
-.geo-chart{
+.home{
+ background-color: #66FFFF;
+}
 
+#home-title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 1px black;
+}
+
+#home-update-title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }

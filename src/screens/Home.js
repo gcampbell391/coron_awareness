@@ -11,7 +11,7 @@ const Home = () => {
         fetch('https://api.covid19api.com/summary')
             .then(resp => resp.json())
             .then(data => {
-                setUpdateDate(data.Date)
+                setUpdateDate(`${data.Date.split('-')[1]}/${data.Date.split('-')[2].split('T')[0]}/${data.Date.split('-')[0]}`)
                 data.Countries.forEach(country => {
                     console.log(country)
                     setChartData(chartData => [...chartData, [country.Country, country.NewConfirmed]])
@@ -20,9 +20,9 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
-            <h1>Coron-Awareness</h1>
-            <p>Last Updated: {updateDate}</p>
+        <div className='home'>
+            <h1 id='home-title'>CORON-AWARENESS</h1>
+            <p id='home-update-title'>Last Updated: {updateDate}</p>
             <CoronaMap data={chartData} />
         </div>
     )

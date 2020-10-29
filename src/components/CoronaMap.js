@@ -16,8 +16,9 @@ const CoronaMap = (props) => {
                 mapsApiKey="YOUR_KEY_HERE"
                 rootProps={{ 'data-testid': '1' }}
                 options={{
-                    colorAxis: { colors: ['yellow', 'orange', 'red'] },
-                    datalessRegionColor: '#E0E0E0'
+                    colorAxis: { colors: ['#66CC66', '#FFFF66', '#FFCC66', '#FF0033'] },
+                    datalessRegionColor: '#E0E0E0',
+                    backgroundColor: '#66FFFF'
                 }}
             />
         </div>
