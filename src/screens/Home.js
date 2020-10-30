@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import CoronaMap from '../components/CoronaMap'
 import Blink from 'react-blink-text';
+import CountryDetailsModal from '../components/CountryDetailsModal';
+
 
 
 
@@ -11,6 +13,8 @@ const Home = () => {
     const [countries, setCountries] = useState([])
     const [updateDate, setUpdateDate] = useState('')
     const [globalData, setGlobalData] = useState('')
+    const [cDModalOpen, setCDModalOpen] = useState(false)
+    const [selectedCountry, setSelectedCountry] = useState('')
 
     useEffect(() => {
         fetch('https://api.covid19api.com/summary')
@@ -31,7 +35,8 @@ const Home = () => {
         const selectedCountry = countries.filter(country => {
             return country.CountryCode === countryInitials
         })
-        console.log(selectedCountry)
+        setSelectedCountry(selectedCountry[0])
+        setCDModalOpen(true)
     }
 
     return (
@@ -41,6 +46,7 @@ const Home = () => {
             <p id='home-total-new-title-numbers'><Blink color='red' text={globalData.NewConfirmed} fontSize='35'>Total Cases</Blink></p>
             <CoronaMap data={chartData} showCountryDetails={showCountryDetails} />
             <p id='home-update-title'>Last Updated: {updateDate}</p>
+            <CountryDetailsModal open={cDModalOpen} handleClose={() => setCDModalOpen(false)} country={selectedCountry} />
         </div>
     )
 }
