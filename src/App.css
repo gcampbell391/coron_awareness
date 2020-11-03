@@ -38,6 +38,23 @@
   margin-top: -25px;
 }
 
+.country-details{
+  color: white;
+  font-weight: bold;
+}
+
+.country-details-country-code{
+  text-align: right;
+  margin-top: -10px;
+  margin-right: -15px;
+  font-size: 20px;
+}
+
+.country-details-country-name{
+  text-align: center;
+  font-size: 25px;
+}
+
 /*
   Mobile Responsiveness 
 */
@@ -74,3 +91,4 @@
     margin-top: -5px;
   }
 }
+
