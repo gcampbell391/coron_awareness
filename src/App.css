@@ -55,6 +55,12 @@
   font-size: 25px;
 }
 
+.footer{
+  color:white;
+  text-shadow: 1px 1px black;
+  margin-top: 100px;
+}
+
 /*
   Mobile Responsiveness 
 */
@@ -69,7 +75,7 @@
 
   #home-update-title{
     font-family: 'Orbitron', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: white;
     text-shadow: 1px 1px black;
     margin-bottom: 30px;
@@ -89,6 +95,13 @@
     color: white;
     text-shadow: 1px 1px black;
     margin-top: -5px;
+  }
+
+  .footer{
+    color:white;
+    text-shadow: 1px 1px black;
+    margin-top: 50px;
+    font-size: 12px;
   }
 }
 

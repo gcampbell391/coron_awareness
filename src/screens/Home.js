@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import CoronaMap from '../components/CoronaMap'
 import Blink from 'react-blink-text';
 import CountryDetailsModal from '../components/CountryDetailsModal';
+import Footer from '../components/Footer';
 
 
 
@@ -47,6 +48,7 @@ const Home = () => {
             <CoronaMap data={chartData} showCountryDetails={showCountryDetails} />
             <p id='home-update-title'>Last Updated: {updateDate}</p>
             <CountryDetailsModal open={cDModalOpen} handleClose={() => setCDModalOpen(false)} country={selectedCountry} />
+            <Footer />
         </div>
     )
 }
